@@ -7,7 +7,7 @@ You can easily install all of the Python requirements with Continuum Analytics' 
 The easiest way to install all these packages is the following, once you've gotten conda installed:
 
 ``` 
-conda create --name ds30 --file environment.yaml
+conda create --name ds30 --file environment.yml
 ```
 
 More importantly you'll need a working PySpark install (have pyspark in your path). You can download Spark [here](http://spark.apache.org/downloads.html).
