@@ -4,9 +4,16 @@ Data Science in 30 Minutes: Spark Streaming and Basic Analysis
 
 The presentation uses Jupyter notebooks, with a Scala/Spark kernel for ingesting data and a Python kernel for analysis.
 
-Get a Scala/Spark kernel for Jupyter notebooks here.
+The following will help you duplicate our (admittedly aged) kernel setup. We'll assume that you have already installed a Python environment, iPython, and Jupyter through either Anaconda or some other method.
 
-Depending on which kernels you use, the setup may vary. The three dependencies you'll need in the Scala/Spark kernel are:
+1. You will need to have a working Java installation with $JAVA_HOME set. On Ubuntu, you can e.g. `sudo apt-get install default-jdk`.
+1. `wget https://oss.sonatype.org/content/repositories/snapshots/sh/jove/jove-spark-cli_1.3_2.10/0.1.1-1-SNAPSHOT/jove-spark-cli_1.3_2.10-0.1.1-1-SNAPSHOT.tar.gz`
+1. Unpack with `tar xvf jove-spark-cli....tar.gz`
+1. `mv jove-spark-cli...SNAPSHOT jove-spark` for convenience
+1. Run `./jove-spark/bin/jove-spark-1.3 --kernel-spec`
+1. Check your installed kernels with `jupyter kernelspec list`. You should see the Spark kernel installed.
+
+If you choose to use a different (newer) kernel, the setup may vary. The three dependencies you'll need in the Scala/Spark kernel are:
 * org.apache.spark %% spark-streaming % 1.3.1
 * org.apache.spark %% spark-streaming-twitter % 1.3.1
 * com.google.code.gson % gson % 2.4
