@@ -1,0 +1,6 @@
+oauth.consumerKey=
+oauth.consumerSecret=
+oauth.accessToken=
+oauth.accessTokenSecret=
+
+## When finished, delete this line and rename this file to `twitter4j.properties`
