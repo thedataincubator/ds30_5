@@ -2,6 +2,16 @@ Data Science in 30 Minutes: Spark Streaming and Basic Analysis
 
 ## Installation Instructions
 
+You can easily install all of the Python requirements with Continuum Analytics' [conda](http://conda.pydata.org/docs/) - if you haven't heard of it yet, we'd highly recommend taking a look!
+
+The easiest way to install all these packages is the following, once you've gotten conda installed:
+
+``` 
+conda create --name ds30 --file environment.yaml
+```
+
+More importantly you'll need a working PySpark install (have pyspark in your path). You can download Spark [here](http://spark.apache.org/downloads.html).
+
 The presentation uses Jupyter notebooks, with a Scala/Spark kernel for ingesting data and a Python kernel for analysis.
 
 The following will help you duplicate our (admittedly aged) kernel setup. We'll assume that you have already installed a Python environment, iPython, and Jupyter through either Anaconda or some other method.
@@ -18,17 +28,7 @@ If you choose to use a different (newer) kernel, the setup may vary. The three d
 * org.apache.spark %% spark-streaming-twitter % 1.3.1
 * com.google.code.gson % gson % 2.4
 
-You can easily install all of the Python requirements with Continuum Analytics' [conda](http://conda.pydata.org/docs/) - if you haven't heard of it yet, we'd highly recommend taking a look!
-
-The easiest way to install all these packages is the following, once you've gotten conda installed:
-
-``` 
-conda create --name ds30 --file environment.yaml
-```
-
-More importantly you'll need a working PySpark install (have pyspark in your path). You can download Spark [here](http://spark.apache.org/downloads.html).
-
-Furthermore, for Twitter data, you'll need to register an [application](https://apps.twitter.com) and enter your credentials in the `twitter4j.properties` file.
+Lastly, for Twitter data, you'll need to register an [application](https://apps.twitter.com) and enter your credentials in the `twitter4j.properties` file.
 
 ## Credits
 This talk was created by Ariel M'ndange-Pfupfu, a Data Scientist at The Data Incubator. He has worked on a variety of data science, software engineering, and curriculum development projects and is also a current Bleeker Fellow. He earned his Master’s degree at Stanford and his Ph.D. in Materials Science & Engineering from Northwestern.
