@@ -18,7 +18,14 @@ If you choose to use a different (newer) kernel, the setup may vary. The three d
 * org.apache.spark %% spark-streaming-twitter % 1.3.1
 * com.google.code.gson % gson % 2.4
 
-For the Python kernel, you'll need the matplotlib library (as well as the usually included datetime and json).
+You can easily install all of the Python requirements with Continuum Analytics' [conda](http://conda.pydata.org/docs/) - if you haven't heard of it yet, we'd highly recommend taking a look!
+
+The easiest way to install all these packages is the following, once you've gotten conda installed:
+
+``` 
+conda create --name ds30 --file environment.yaml
+```
+
 More importantly you'll need a working PySpark install (have pyspark in your path). You can download Spark [here](http://spark.apache.org/downloads.html).
 
 Furthermore, for Twitter data, you'll need to register an [application](https://apps.twitter.com) and enter your credentials in the `twitter4j.properties` file.

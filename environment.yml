@@ -1,0 +1,6 @@
+name: ds30_spark
+dependencies:
+- jupyter
+- matplotlib
+- pip
+- python=2.7.11=0
