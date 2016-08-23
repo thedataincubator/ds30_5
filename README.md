@@ -1,5 +1,11 @@
 Data Science in 30 Minutes: Spark Streaming and Basic Analysis
 
+## Technical Issues During Broadcast
+
+Very sorry about this, Google decided the event was over for some reason! We will record this or re-broadcast as soon as possible and distribute the URL. Keep checking this space.
+
+Feel free to make issues/contact me via GitHub with any questions!
+
 ## Installation Instructions
 
 You can easily install all of the Python requirements with Continuum Analytics' [conda](http://conda.pydata.org/docs/) - if you haven't heard of it yet, we'd highly recommend taking a look!
