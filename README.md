@@ -1,5 +1,6 @@
-Data Science in 30 Minutes: Spark Streaming and Basic Analysis
+#Data Science in 30 Minutes: Spark Streaming and Basic Analysis
 
+To view the talk that goes along with this repo, click [here](https://www.youtube.com/watch?v=FdmM1qAw2XU). 
 
 ## Installation Instructions
 
